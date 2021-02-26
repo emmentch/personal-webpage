@@ -1,0 +1,96 @@
+﻿@page
+@model ElijahsPortfolioWebsite.Pages.ProjectsModel
+@{
+    ViewData["Title"] = "Projects";
+}
+<div id="accordion">
+    <div class="card mb-3">
+        <button class="collapse-header btn text-left" data-toggle="collapse" data-target="#collapseOne">
+            Project: 2048 game (11/27/2020-12/1/2020 )
+        </button>
+        <div id="collapseOne" class="collapse">
+            <div class="card-body">
+                This project was a desire to further work on JavaScript, as well as make something more visual and interactive
+                than some of the other projects I have made. I made a clone of the popular game 2048 as I figured
+                it would be a fun idea. I also used this as a way to larn how to use cookies, as a way to store old high scores.
+                To find this game, click on the "Game" tab on this website (only functional on desktop).
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <button class="collapse-header btn text-left" data-toggle="collapse" data-target="#collapseTwo">
+            Project: Python task sheet (11/10/2020-12/15/20 (Paused))
+        </button>
+        <div id="collapseTwo" class="collapse">
+            <div class="card-body">
+                This project is a recent attempt to have a console based (for now)
+                python script that lets me write,edit and sort personal todo list
+                items by cost, ease, and importance. I utilize the sqlite3 library to create
+                a database to store all of the items between sessions.
+                I use regular expressions to make the parsing of the
+                inputs a lot easier to handle, additionally the print function prints the data in
+                an easy to read table, and handles IO as a list of lists with regex to simply things.
+                <br />
+                UPDATE: I chose to pause this project as learning new skills while job searching has finally 
+                led me down the rabbit hole of the Microsoft Stack (.NET/Azure/C#), along with various
+                other langauges that are better suited with them (JavaScript).
+                <div class="media embed-responsive-16by9 embed-responsive">
+                    <video controls poster="~/images/python_poster.PNG">
+                        <source src="~/images/pythonVideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <button class="collapse-header btn text-left" data-toggle="collapse" data-target="#collapseThree">
+            Project: Personal webpage (this one) (11/3/2020-Present)
+        </button>
+        <div id="collapseThree" class="collapse">
+            <div class="card-body">
+                This project stems from a desire to create a portfolio of myself
+                to those looking for Software Developers. As seen here, I am documenting
+                projects I am doing/have done, contact info, and my resume and cover letter.
+                This site runs on HTML, CSS, <s>PHP,</s> and a little bit of JavaScript. I have a to do
+                list tab on this site as a way to both keep track of my project endeavors, as well
+                as a way to show to others the steps it took to assemble the projects I have worked on
+                and the skills I am currently trying to develop.
+                <br />
+                UPDATE (2/20/21): I switched from using PHP and my former university for web hosting,
+                to using the ASP.NET Core framework instead, along with Microsoft Azure for web hosting.
+                The biggest plus is instant pushes to the internet, along with using an actual IDE (Visual Studio),
+                rather than coding everything using Vim, which was inconvient.
+                <br />
+                UPDATE (2/25/21): I also revamped the website by redoing it using Bootstrap, as I felt using the
+                CSS Framework would lead to a more consistant feel and overall improve the appeal of the website.
+                Although I enjoyed how personal my old website felt, I think this more modern approach is more appropriate.
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <button class="collapse-header btn text-left" data-toggle="collapse" data-target="#collapseFour">
+            Project: JavaFX fighting simulator (10/27/2020-11/10/2020 (Paused))
+        </button>
+        <div id="collapseFour" class="collapse">
+            <div class="card-body">
+                This project was started on a whim as a result of a COVID related
+                quarantine. During my undergrad we had to use JavaFX to make an
+                interactive tournament bracket, and I thought making a simple GUI
+                based text simulator would make a great project to freshen up on
+                Java, as well as have a project to put on my resume, something
+                up until this point I did not have. I may still work on this,
+                but was more of a project to dip my toes back into the water
+                when it came to programming.
+                <div class="media">
+                    <img src="~/images/rpggame_main.PNG" alt="image of main game" class="px-3" style="width:50vmin; height:auto">
+                    <img src="~/images/rpggame_opening.PNG" alt="intro screen to game" class="px-3" style="width:30vmin; height:auto">
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>*All code for these projects are available on my GitHub</p>
+</div>

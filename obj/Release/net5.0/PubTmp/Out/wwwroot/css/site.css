@@ -1,0 +1,60 @@
+﻿/* Colors from old website/css page */
+:root {
+    --link_color: #0C66CB; /*blue*/
+    --background_color: #cbe3ef; /*soft blue*/
+    --text_color: #0b2c0b; /*dark green*/
+    --menu_color: #6DAFFE; /*baby blue*/
+    --important_text_color: #003B73; /*navy blue*/
+    --hover_color: #578CCB; /*darker baby blue*/
+}
+body {
+    background-color: var(--background_color);
+}
+.collapse-header {
+    background-color:var(--menu_color);
+}
+.collapse-header:hover {
+    background-color: var(--hover_color);
+}
+.collapse-header:active {
+    background-color: var(--background_color);
+}
+.bg-menu {
+    background-color:var(--menu_color);
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 18px;
+    }
+    .nav-item {
+        font-size:24px;
+    }
+    .collapse-header {
+       font-size:20px;
+    }
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 30px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 30px; /* Vertically center the text there */
+}

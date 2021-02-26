@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Simple website to hold links and explain my projects">
+    <meta name="author" content="Elijah Mentch">
+    <title>@ViewData["Title"] - Elijah's Webpage</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BKMNNY0EP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2BKMNNY0EP');
+    </script>
+</head>
+<body >
+    <header class="pb-3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-menu">
+                <a asp-area="" asp-page="Index" class="navbar-brand">Elijah's Webpage</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            @if (ViewData["Title"].ToString() == "Home")
+                            {<a asp-area="" asp-page="Index" class="nav-link active">Home</a>}
+                            else
+                            {<a asp-area="" asp-page="Index" class="nav-link">Home</a>}
+                        </li>
+                        <li class="nav-item">
+                            @if (ViewData["Title"].ToString() == "Contact")
+                            {<a asp-area="" asp-page="Contact" class="nav-link active">Contact</a>}
+                            else
+                            {<a asp-area="" asp-page="Contact" class="nav-link">Contact</a>}
+                        </li>
+                        <li class="nav-item">
+                            @if (ViewData["Title"].ToString() == "Projects")
+                            {<a asp-area="" asp-page="Projects" class="nav-link active">Projects</a>}
+                            else
+                            {<a asp-area="" asp-page="Projects" class="nav-link">Projects</a>}
+                        </li>
+                        <li class="nav-item">
+                            @if (ViewData["Title"].ToString() == "Todo")
+                            {<a asp-area="" asp-page="Todo" class="nav-link active">Todo</a>}
+                            else
+                            {<a asp-area="" asp-page="Todo" class="nav-link">Todo</a>}
+                        </li>
+                        <li class="nav-item">
+                            @if (ViewData["Title"].ToString() == "Game")
+                            {<a asp-area="" asp-page="Game" class="nav-link active">Game</a>}
+                            else
+                            {<a asp-area="" asp-page="Game" class="nav-link">Game</a>}
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            Author: Elijah Mentch - Date started: 11/3/2020
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
