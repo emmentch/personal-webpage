@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("4fc71864-20cc-4400-84e7-4de68de37a37")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("ElijahsPortfolioWebsite")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
