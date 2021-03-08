@@ -4,13 +4,4 @@
     <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>4fc71864-20cc-4400-84e7-4de68de37a37</UserSecretsId>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Content Remove="wwwroot\documents\Elijah_Mentch_resume.pdf" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="wwwroot\documents\Elijah_Mentch_resume.pdf" />
-  </ItemGroup>
-
 </Project>
