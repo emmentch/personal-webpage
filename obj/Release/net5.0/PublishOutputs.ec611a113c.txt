@@ -1,5 +1,6 @@
 C:\Users\emmen\source\repos\ElijahsPortfolioWebsite\obj\Release\net5.0\PubTmp\Out\ElijahsPortfolioWebsite.exe
 C:\Users\emmen\source\repos\ElijahsPortfolioWebsite\obj\Release\net5.0\PubTmp\Out\wwwroot\css\site.css
+C:\Users\emmen\source\repos\ElijahsPortfolioWebsite\obj\Release\net5.0\PubTmp\Out\wwwroot\documents\Elijah_Mentch_Cover_Letter.docx
 C:\Users\emmen\source\repos\ElijahsPortfolioWebsite\obj\Release\net5.0\PubTmp\Out\wwwroot\documents\Elijah_Mentch_Cover_Letter.pdf
 C:\Users\emmen\source\repos\ElijahsPortfolioWebsite\obj\Release\net5.0\PubTmp\Out\wwwroot\documents\Elijah_Mentch_resume.pdf
 C:\Users\emmen\source\repos\ElijahsPortfolioWebsite\obj\Release\net5.0\PubTmp\Out\wwwroot\favicon.ico
